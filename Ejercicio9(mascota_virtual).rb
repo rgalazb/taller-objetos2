@@ -7,18 +7,10 @@ class MyPet
     puts @name + '  nace  '
   end
   def hungry?
-    if @satisfied == 0
-      true
-    else
-      false
-    end
+    @satisfied == 0
   end
   def needToGo?
-    if @fullIntestine == 10
-      true
-    else
-      false
-    end
+    @fullIntestine == 10 
   end
   def timeLapse
     if @satisfied > 0
